@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+}
+
+.sharing-buttons{
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sharing-buttons li{
+  display: inline-block;
+}
+
+.sharing-buttons a{
+  border: 1px solid;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sharing-buttons a:hover{
+  color: #eee;
+  text-decoration: none;
+}
+
+.fa{
+  padding: 0.5em;
+}
+
+.facebook{
+  background: #3B5998;
+}
+
+.twitter{
+  background: #00ACED;
+}
+
+.google-plus{
+  background: #D14836
+}
