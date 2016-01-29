@@ -4,6 +4,10 @@
 body{
   font-family: sans-serif;
 }
+h1 {
+  text-align: center;
+  margin-top:2em;
+}
 
 .sharing-buttons{
   list-style: none;
@@ -16,7 +20,6 @@ body{
 }
 
 .sharing-buttons a{
-  border: 1px solid;
   padding: 0.5em;
   color: #fff;
   text-decoration: none;

@@ -8,7 +8,8 @@
   </head>
   <body>
 
-    <!-- BEGIN SOCIAL SHARING BUTTONS -->
+    <!-- BEGIN REGULAR SOCIAL SHARING BUTTONS -->
+    <h1>REGULAR SOCIAL SHARING BUTTONS</h1>
     <ul class="sharing-buttons">
       <li class="facebook">
         <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.twitch.tv%2Fstreamquests" target="_blank">
@@ -25,7 +26,31 @@
         <a href="https://plus.google.com/share?url=http%3A%2F%2Fwww.twitch.tv%2Fstreamquests" target="_blank"><i class="fa fa-google-plus"></i>Share on Google+</a>
       </li>
     </ul>
-    <!-- END SOCIAL SHARING BUTTONS -->
+    <!-- END REGULAR SOCIAL SHARING BUTTONS -->
+
+    <!-- BEGIN FACEBOOK SOCIAL SHARING BUTTONS -->
+    <h1>FACEBOOK SOCIAL SHARING BUTTONS</h1>
+    <ul class="sharing-buttons">
+      <li class="facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php
+        $url = get_site_url();
+        $urlSafe = esc_url( $url );
+        echo urlencode($urlSafe);
+        ?>" target="_blank">
+          <i class="fa fa-facebook"></i>Share on Facebook
+        </a>
+      </li>
+
+      <li class="twitter">
+        <!-- Twitter link can accept the '&via=YOURTWITTERACCOUNTNAME' to include your Twitter handle -->
+        <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode($urlSafe); ?>" target="_blank"><i class="fa fa-twitter"></i>Tweet</a>
+      </li>
+
+      <li class="google-plus">
+        <a href="https://plus.google.com/share?url=<?php echo urlencode($urlSafe); ?>" target="_blank"><i class="fa fa-google-plus"></i>Share on Google+</a>
+      </li>
+    </ul>
+    <!-- END REGULAR SOCIAL SHARING BUTTONS -->
 
   </body>
 </html>
